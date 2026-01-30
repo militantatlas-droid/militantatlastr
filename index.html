@@ -20,18 +20,25 @@
       position:relative;
     }
 
-    /* Arka plan fotoğrafı – mobil için optimize */
+    /* Varsayılan (PC / yatay ekran) arka plan */
     body::before {
       content:"";
       position:fixed;
       inset:0;
       z-index:-2;
-      background-image: url('https://www.ctvnews.ca/resizer/v2/KKXSNHXOERG7DH7I7LFGIYNEXI.jpg?smart=true&auth=970d00daafbefeaa0cfdaf3e0b243a5309ea511a79b01f6105af0974256fe297&width=1600'); /* orijinal fotoğrafın optimize edilmiş hali */
-      background-size: cover;           /* fotoğrafı ekrana tam doldurur */
-      background-position: center;      /* ortalanır */
-      background-repeat: no-repeat;
-      filter: blur(8px) brightness(0.45); /* hafif bulanık + orta koyu */
-      transform: scale(1.05);           /* kenarlardaki boşlukları kapatır (mobil için önemli) */
+      background-image: url('https://www.ctvnews.ca/resizer/v2/KKXSNHXOERG7DH7I7LFGIYNEXI.jpg?smart=true&auth=970d00daafbefeaa0cfdaf3e0b243a5309ea511a79b01f6105af0974256fe297&width=1600'); /* ← PC için yatay fotoğraf */
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      filter:blur(8px) brightness(0.45);
+      transform:scale(1.05);
+    }
+
+    /* Mobil / dikey ekran (9:16 veya portrait) için farklı fotoğraf */
+    @media (max-aspect-ratio: 9/16), (orientation: portrait) {
+      body::before {
+        background-image: url('https://hizliresim.com/clpjw17'); /* ← Mobil için dikey uyumlu fotoğraf (değiştir) */
+      }
     }
 
     .container {
@@ -43,7 +50,7 @@
       padding:12px;
       max-height:100vh;
       overflow:hidden;
-      background:rgba(0,0,0,0.45);      /* içerik arkasına karanlık katman (metinler net okunsun) */
+      background:rgba(0,0,0,0.45);
       border-radius:16px;
     }
 
@@ -103,7 +110,6 @@
       color:#4ade80;
     }
 
-    /* En küçük ekranlar için ekstra sıkıştırma */
     @media (max-width:380px) {
       .container { padding:8px; }
       .continent { padding:1.2rem 0.8rem; font-size:1.55rem; }
