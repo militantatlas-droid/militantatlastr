@@ -7,8 +7,8 @@
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     html, body {
-      height:100%;      
-      overflow:hidden;           /* kaydırmayı tamamen engelle */
+      height:100%;
+      overflow:hidden;
     }
     body {
       background:#000;
@@ -19,16 +19,21 @@
       align-items:center;
       position:relative;
     }
+
+    /* Arka plan fotoğrafı – mobil için optimize */
     body::before {
       content:"";
       position:fixed;
       inset:0;
-      background-image: url('https://www.ctvnews.ca/resizer/v2/KKXSNHXOERG7DH7I7LFGIYNEXI.jpg?smart=true&auth=970d00daafbefeaa0cfdaf3e0b243a5309ea511a79b01f6105af0974256fe297&width=5454&height=3067'); /* ← burayı değiştir */
-      background-size:cover;
-      background-position:center;
-      filter: blur(8px) brightness(0.9); /* blur + karartma seviyesi */
       z-index:-2;
+      background-image: url('https://www.ctvnews.ca/resizer/v2/KKXSNHXOERG7DH7I7LFGIYNEXI.jpg?smart=true&auth=970d00daafbefeaa0cfdaf3e0b243a5309ea511a79b01f6105af0974256fe297&width=1600'); /* orijinal fotoğrafın optimize edilmiş hali */
+      background-size: cover;           /* fotoğrafı ekrana tam doldurur */
+      background-position: center;      /* ortalanır */
+      background-repeat: no-repeat;
+      filter: blur(8px) brightness(0.45); /* hafif bulanık + orta koyu */
+      transform: scale(1.05);           /* kenarlardaki boşlukları kapatır (mobil için önemli) */
     }
+
     .container {
       position:relative;
       z-index:1;
@@ -38,9 +43,10 @@
       padding:12px;
       max-height:100vh;
       overflow:hidden;
-      background:rgba(0,0,0,0.45); /* içerik arkasına hafif karanlık katman */
+      background:rgba(0,0,0,0.45);      /* içerik arkasına karanlık katman (metinler net okunsun) */
       border-radius:16px;
     }
+
     h1 {
       font-size:clamp(2rem,7vw,3.2rem);
       margin:0.8rem 0 1.2rem;
@@ -48,12 +54,14 @@
       text-shadow:0 0 12px rgba(74,222,128,0.4);
       letter-spacing:1.5px;
     }
+
     .continents {
       display:flex;
       flex-direction:column;
       gap:1rem;
       margin:1rem 0;
     }
+
     .continent {
       background:#111;
       border:1.5px solid #333;
@@ -67,6 +75,7 @@
       touch-action:manipulation;
       -webkit-tap-highlight-color:transparent;
     }
+
     .continent:hover,
     .continent:active {
       background:#4ade80;
@@ -75,21 +84,26 @@
       box-shadow:0 6px 20px rgba(74,222,128,0.5);
       transform:translateY(-3px);
     }
+
     .africa {
       font-size:clamp(1.5rem,5.2vw,1.9rem);
       font-weight:900;
       text-transform:uppercase;
       letter-spacing:1px;
     }
+
     .hint {
-      font-size:clamp(1rem,4vw,1.3rem);
+      font-size:clamp(0.95rem,3.8vw,1.2rem);
       color:#888;
       margin-top:1.5rem;
       letter-spacing:0.8px;
     }
+
     .hint strong {
       color:#4ade80;
     }
+
+    /* En küçük ekranlar için ekstra sıkıştırma */
     @media (max-width:380px) {
       .container { padding:8px; }
       .continent { padding:1.2rem 0.8rem; font-size:1.55rem; }
