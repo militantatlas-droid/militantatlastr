@@ -6,8 +6,11 @@
   <title>MİLİTAN ATLASI</title>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
+    html, body {
+      height:100%;
+      overflow:hidden;           /* kaydırmayı tamamen engelle */
+    }
     body {
-      min-height:100vh;
       background:#000;
       color:#eee;
       font-family:Arial, Helvetica, sans-serif;
@@ -18,33 +21,35 @@
     .container {
       text-align:center;
       width:100%;
-      max-width:500px;
-      padding:20px;
+      max-width:420px;
+      padding:12px;              /* kenar boşluğu iyice küçültüldü */
+      max-height:100vh;
+      overflow:hidden;
     }
     h1 {
-      font-size:clamp(2.8rem,10vw,5rem);
-      margin-bottom:2.5rem;
+      font-size:clamp(2rem, 7vw, 3.2rem);  /* başlık küçültüldü */
+      margin:0.8rem 0 1.2rem;
       color:#4ade80;
-      text-shadow:0 0 20px rgba(74,222,128,0.5);
-      letter-spacing:3px;
+      text-shadow:0 0 12px rgba(74,222,128,0.4);
+      letter-spacing:1.5px;
     }
     .continents {
       display:flex;
       flex-direction:column;
-      gap:1.5rem;
-      margin:2rem 0;
+      gap:1rem;                  /* butonlar arası boşluk azaltıldı */
+      margin:1rem 0;
     }
     .continent {
       background:#111;
-      border:2px solid #333;
-      border-radius:16px;
-      padding:2.2rem 1.5rem;
-      font-size:clamp(1.6rem,6vw,2.2rem);
+      border:1.5px solid #333;
+      border-radius:12px;
+      padding:1.4rem 1rem;       /* buton boyutu küçültüldü */
+      font-size:clamp(1.3rem, 4.8vw, 1.7rem);
       font-weight:bold;
       cursor:pointer;
-      transition:all 0.25s ease;
+      transition:all 0.2s ease;
       user-select:none;
-      box-shadow:0 4px 15px rgba(0,0,0,0.7);
+      box-shadow:0 3px 10px rgba(0,0,0,0.6);
       touch-action:manipulation;
       -webkit-tap-highlight-color:transparent;
     }
@@ -53,36 +58,45 @@
       background:#4ade80;
       color:#000;
       border-color:#4ade80;
-      box-shadow:0 10px 30px rgba(74,222,128,0.6);
-      transform:translateY(-4px);
+      box-shadow:0 6px 20px rgba(74,222,128,0.5);
+      transform:translateY(-3px);
     }
-     .hint {
-      font-size:clamp(1.2rem,4.5vw,1.6rem);
-      color:#888;
-      margin-top:3rem;
+    .africa {
+      font-size:clamp(1.5rem, 5.2vw, 1.9rem);
+      font-weight:900;
+      text-transform:uppercase;
       letter-spacing:1px;
-      font-weight:500;
+    }
+    .hint {
+      font-size:clamp(0.95rem, 3.8vw, 1.2rem);  /* ipucu küçültüldü */
+      color:#888;
+      margin-top:1.5rem;
+      letter-spacing:0.8px;
     }
     .hint strong {
       color:#4ade80;
     }
-    @media (max-width:500px) {
-      .continent { padding:2.8rem 1.2rem; font-size:2.1rem; }
-      h1 { margin-bottom:2rem; }
-      .hint { margin-top:4rem; }
+
+    /* En küçük ekranlar için ekstra sıkıştırma */
+    @media (max-width:360px) {
+      .container { padding:8px; }
+      .continent { padding:1.2rem 0.8rem; font-size:1.5rem; }
+      h1 { font-size:2.6rem; margin:0.6rem 0 1rem; }
+      .hint { margin-top:1.2rem; font-size:1.1rem; }
+      .continents { gap:0.8rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-   <h1>MİLİTAN ATLASI</h1>
-   <div class="continents">
+    <h1>MİLİTAN ATLASI</h1>
+    <div class="continents">
       <div class="continent africa" onclick="goTo('Afrika')">AFRİKA</div>
       <div class="continent" onclick="goTo('Asya')">ASYA</div>
       <div class="continent" onclick="goTo('Avrupa')">AVRUPA</div>
       <div class="continent" onclick="goTo('Kuzey Amerika')">KUZEY AMERİKA</div>
-      <div class="continent" onclick="goTo('Güney Amerika')">GÜNEY AMERİKA</div>    
-   </div>
+      <div class="continent" onclick="goTo('Güney Amerika')">GÜNEY AMERİKA</div>
+    </div>
     <div class="hint">
       <strong>Lütfen bir bölge seçin...</strong>
     </div>
@@ -91,9 +105,9 @@
   <script>
     function goTo(continent) {
       if (continent === 'Afrika') {
-        window.location.href = 'afrika.html';  // dosya adın buysa değiştir
+        window.location.href = 'afrika.html';
       } else {
-         alert(continent + ' bölgesi yakında hazır olacak!');
+        alert(continent + ' bölgesi yakında hazır olacak!');
       }
     }
   </script>
