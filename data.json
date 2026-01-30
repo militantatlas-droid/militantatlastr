@@ -1,0 +1,223 @@
+{
+  "AO": {
+    "name": "Angola",
+    "groups": [
+      { "name": "MPLA fraksiyonları (tarihsel)", "url": "#" },
+      { "name": "UNITA kalıntıları", "url": "#" }
+    ]
+  },
+  "BI": {
+    "name": "Burundi",
+    "groups": [
+      { "name": "RED-Tabara", "url": "#" },
+      { "name": "FLN (Ulusal Kurtuluş Güçleri)", "url": "#" }
+    ]
+  },
+  "BJ": { "name": "Benin", "groups": [] },
+  "BF": {
+    "name": "Burkina Faso",
+    "groups": [
+      { "name": "JNIM (İslam ve Müslümanlar İçin Destek Cemaati)", "url": "#" },
+      { "name": "Ansaroul Islam", "url": "#" },
+      { "name": "ISGS (Büyük Sahra İslam Devleti)", "url": "#" }
+    ]
+  },
+  "BW": { "name": "Botsvana", "groups": [] },
+  "CF": {
+    "name": "Orta Afrika Cumhuriyeti",
+    "groups": [
+      { "name": "Anti-Balaka", "url": "#" },
+      { "name": "Seleka koalisyonu", "url": "#" },
+      { "name": "UPC (Orta Afrika Barış Birliği)", "url": "#" }
+    ]
+  },
+  "CI": {
+    "name": "Fildişi Sahili",
+    "groups": [
+      { "name": "Kuzey milis kalıntıları", "url": "#" }
+    ]
+  },
+  "CM": {
+    "name": "Kamerun",
+    "groups": [
+      { "name": "Boko Haram (Uzak Kuzey)", "url": "#" },
+      { "name": "Ambazonia ayrılıkçıları (Anglofon krizi)", "url": "#" }
+    ]
+  },
+  "CD": {
+    "name": "Kongo Demokratik Cumhuriyeti",
+    "groups": [
+      { "name": "ADF (Müttefik Demokratik Güçler)", "url": "#" },
+      { "name": "CODECO", "url": "#" },
+      { "name": "M23", "url": "#" },
+      { "name": "Mai-Mai grupları", "url": "#" }
+    ]
+  },
+  "CG": { "name": "Kongo Cumhuriyeti", "groups": [] },
+  "DJ": { "name": "Cibuti", "groups": [] },
+  "DZ": {
+    "name": "Cezayir",
+    "groups": [
+      { "name": "AQIM kalıntıları (İslam Maghreb'de El Kaide)", "url": "#" },
+      { "name": "Jund al-Khilafah", "url": "#" }
+    ]
+  },
+  "EG": {
+    "name": "Mısır",
+    "groups": [
+      { "name": "Wilayat Sinai (IŞİD-Sinai Vilayeti)", "url": "#" },
+      { "name": "Ajnad Misr kalıntıları", "url": "#" },
+      { "name": "ÖRNEK", "url": "#" }
+    ]
+  },
+  "ER": { "name": "Eritre", "groups": [] },
+  "ET": {
+    "name": "Etiyopya",
+    "groups": [
+      { "name": "OLF-Shane (Oromo Kurtuluş Ordusu)", "url": "#" },
+      { "name": "TPLF (Tigray Halk Kurtuluş Cephesi) fraksiyonları", "url": "#" },
+      { "name": "Eş-Şebab (Ogaden sınırı)", "url": "#" }
+    ]
+  },
+  "GA": { "name": "Gabon", "groups": [] },
+  "GH": { "name": "Gana", "groups": [] },
+  "GN": { "name": "Gine", "groups": [] },
+  "GM": { "name": "Gambiya", "groups": [] },
+  "GW": { "name": "Gine-Bissau", "groups": [] },
+  "GQ": { "name": "Ekvator Ginesi", "groups": [] },
+  "KE": {
+    "name": "Kenya",
+    "groups": [
+      { "name": "Eş-Şebab", "url": "#" }
+    ]
+  },
+  "LR": { "name": "Liberya", "groups": [] },
+  "LY": {
+    "name": "Libya",
+    "groups": [
+      { "name": "LNA (Hafter güçleri)", "url": "#" },
+      { "name": "GNA bağlantılı milisler", "url": "#" },
+      { "name": "IŞİD-Libya", "url": "#" },
+      { "name": "Ensar el-Şeria kalıntıları", "url": "#" }
+    ]
+  },
+  "LS": { "name": "Lesotho", "groups": [] },
+  "MA": { "name": "Fas", "groups": [] },
+  "MG": { "name": "Madagaskar", "groups": [] },
+  "ML": {
+    "name": "Mali",
+    "groups": [
+      { "name": "JNIM", "url": "#" },
+      { "name": "ISGS", "url": "#" },
+      { "name": "Macina Kurtuluş Cephesi", "url": "#" }
+    ]
+  },
+  "MZ": {
+    "name": "Mozambik",
+    "groups": [
+      { "name": "Ahlu Sunna Wa-Jama'a (IŞİD-Mozambik)", "url": "#" }
+    ]
+  },
+  "MR": {
+    "name": "Moritanya",
+    "groups": [
+      { "name": "AQIM bağlantılı gruplar", "url": "#" }
+    ]
+  },
+  "MW": { "name": "Malavi", "groups": [] },
+  "NA": { "name": "Namibya", "groups": [] },
+  "NE": {
+    "name": "Nijer",
+    "groups": [
+      { "name": "ISGS", "url": "#" },
+      { "name": "Boko Haram", "url": "#" },
+      { "name": "JNIM", "url": "#" }
+    ]
+  },
+  "NG": {
+    "name": "Nijerya",
+    "groups": [
+      { "name": "Boko Haram", "url": "#" },
+      { "name": "ISWAP (İslam Devleti Batı Afrika Vilayeti)", "url": "#" },
+      { "name": "Fulani çoban milisleri", "url": "#" }
+    ]
+  },
+  "RW": {
+    "name": "Ruanda",
+    "groups": [
+      { "name": "FDLR (Ruanda Kurtuluş Demokratik Güçleri)", "url": "#" }
+    ]
+  },
+  "EH": {
+    "name": "Batı Sahra",
+    "groups": [
+      { "name": "Polisario Cephesi", "url": "https://tr.wikipedia.org/wiki/Polisario_Cephesi" },
+      { "name": "SADR bağlantılı yapılar", "url": "#" }
+    ]
+  },
+  "SD": {
+    "name": "Sudan",
+    "groups": [
+      { "name": "RSF (Hızlı Destek Kuvvetleri)", "url": "#" },
+      { "name": "Sudan Silahlı Kuvvetleri fraksiyonları", "url": "#" },
+      { "name": "SLM/A (Sudan Kurtuluş Hareketi)", "url": "#" }
+    ]
+  },
+  "SS": {
+    "name": "Güney Sudan",
+    "groups": [
+      { "name": "SPLM-IO (Sudan Halk Kurtuluş Hareketi-Muhalefet İçinde)", "url": "#" },
+      { "name": "Nuer Beyaz Ordu", "url": "#" }
+    ]
+  },
+  "SN": {
+    "name": "Senegal",
+    "groups": [
+      { "name": "MFDC (Casamance ayrılıkçıları)", "url": "#" }
+    ]
+  },
+  "SL": { "name": "Sierra Leone", "groups": [] },
+  "SZ": {
+    "name": "Esvatini (eski adıyla Svaziland)",
+    "groups": [
+      { "name": "PUDEMO bağlantılı radikaller", "url": "#" },
+      { "name": "Monarşi karşıtı militan gruplar", "url": "#" }
+    ]
+  },
+  "TD": {
+    "name": "Çad",
+    "groups": [
+      { "name": "FACT (Çad'da Değişim ve Uyum Cephesi)", "url": "#" },
+      { "name": "Boko Haram sınır grupları", "url": "#" }
+    ]
+  },
+  "TG": { "name": "Togo", "groups": [] },
+  "TN": {
+    "name": "Tunus",
+    "groups": [
+      { "name": "AQIM ve IŞİD bağlantılı hücreler", "url": "#" }
+    ]
+  },
+  "TZ": {
+    "name": "Tanzanya",
+    "groups": [
+      { "name": "Eş-Şebab sınır saldırıları", "url": "#" }
+    ]
+  },
+  "UG": {
+    "name": "Uganda",
+    "groups": [
+      { "name": "ADF (Müttefik Demokratik Güçler)", "url": "#" }
+    ]
+  },
+  "ZA": { "name": "Güney Afrika", "groups": [] },
+  "ZM": { "name": "Zambiya", "groups": [] },
+  "ZW": { "name": "Zimbabve", "groups": [] },
+  "SO": {
+    "name": "Somali",
+    "groups": [
+      { "name": "Eş-Şebab", "url": "#" },
+      { "name": "IŞİD-Somali", "url": "#" }
+    ]
+  }
+}
